@@ -12,23 +12,144 @@
     />
     <title>Platzi Travel</title>
   </head>
-  <body>
+  <body class="font-Montserrat">
 <nav></nav>
 <div id="tab-bar"></div>
 <section class="w-full h-screen">
   <div id="home">
     <div class="w-full h-3/4">
       <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
-        <input class= "outline-none p-4 rounded-full shadow-sm" placeholder="San Francisco" type="search">
-        <button class="w-36 rounded-full text-xl text-primary shadow-sm font-semibold p-4 bg-white">Explorar</button>
+        <input class= "outline-none p-4 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12" placeholder="San Francisco" type="search">
+        <button class="w-48 rounded-full text-xl text-primary shadow-sm font-semibold p-4 bg-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:translate-y-1 hover:scale-110">Explore</button>
     </div>
       <div class="w-full h-full">
         <img src="./img/sanFrancisco.jpg" alt="">
       </div>
       
   </div>
-  <div id = "recomendadas"></div>
-  <div id="rentas-destacadas"></div>
+  <div class="p-6" id ="recomendadas">
+    <p class="text-3xl font-semibold text-primary py-3">Recomendations</p>
+
+    <div class="w-auto h-72 items-center overflow-x-auto overscroll-x-contain flex space-x-6">
+
+      <div class="Card">
+        <div class="w-full h-3/5 bg-norway bg-cover rounded-t-lg"></div>
+        <div class= "w-full h-2/5 bg-secondary rounded-b-lg px-4 py-2">
+          <p class="text-white text-bold text-xl">Norway</p>
+          <p class="text-white text-md">Beautiful landscapes</p>
+        </div>
+      </div>
+    
+      <div class="Card">
+        <div class="w-full h-3/5 bg-new_york bg-cover rounded-t-lg"></div>
+        <div class= "w-full h-2/5 bg-white rounded-b-lg px-4 py-2">
+          <p class="text-terciary text-bold text-xl">New York</p>
+          <p class="text-terciary text-md">Concrete jungle</p>
+        </div>
+    </div>
+
+    <div class="Card">
+      <div class="w-full h-3/5 bg-yosemite bg-cover rounded-t-lg"></div>
+      <div class= "w-full h-2/5 bg-secondary rounded-b-lg px-4 py-2">
+        <p class="text-white text-bold text-xl">Yosemite</p>
+        <p class="text-white text-md">A break from the world</p>
+      </div>
+  </div>
+
+  <div class="Card">
+    <div class="w-full h-3/5 bg-seattle bg-cover rounded-t-lg"></div>
+    <div class= "w-full h-2/5 bg-white rounded-b-lg px-4 py-2">
+      <p class="text-terciary text-bold text-xl">Seattle</p>
+      <p class="text-terciary text-md">Big city</p>
+    </div>
+</div>
+
+<div class="Card">
+  <div class="w-full h-3/5 bg-switzerland bg-cover rounded-t-lg"></div>
+  <div class= "w-full h-2/5 bg-secondary rounded-b-lg px-4 py-2">
+    <p class="text-white text-bold text-xl">Switzerland</p>
+    <p class="text-white text-md">Wonderful place</p>
+  </div>
+</div>
+
+<!-- <div class="Card">
+  <div class="w-full h-3/5 bg-bali bg-cover rounded-t-lg"></div>
+  <div class= "w-full h-2/5 bg-white rounded-b-lg px-4 py-2">
+    <p class="text-terciary text-bold text-xl">Bali</p>
+    <p class="text-terciary text-md">Excentric</p>
+  </div>
+</div>
+
+<div class="Card">
+  <div class="w-full h-3/5 bg-chicago bg-cover rounded-t-lg"></div>
+  <div class= "w-full h-2/5 bg-secondary rounded-b-lg px-4 py-2">
+    <p class="text-white text-bold text-xl">Chicago</p>
+    <p class="text-white text-md">Wind city</p>
+  </div>
+</div>
+
+<div class="Card">
+  <div class="w-full h-3/5 bg-europe bg-cover rounded-t-lg"></div>
+  <div class= "w-full h-2/5 bg-white rounded-b-lg px-4 py-2">
+    <p class="text-terciary text-bold text-xl">Europe</p>
+    <p class="text-terciary text-md">Excentric</p>
+  </div>
+</div> -->
+  
+  </div>
+
+</div>
+  <div class="p-6 h-full w-full mt" id="rentas-destacadas">
+    <p class="text-3xl text-primary font-semibold py-3">Trending stays</p>
+    <div class="flex flex-col w-full h-full space-y-6 items-center justify-center py-3">
+
+      <div class="w-full h-96 bg-chicago bg-cover rounded-lg py-10 px-6">
+        <p class="CardTitle">Chicago</p>
+        <p class="text-md text-white">1 bedrooms, 1 bathroom and kitchen.</p>
+      </div>
+
+      <div class="w-full h-96 bg-LA bg-cover rounded-lg py-10 px-6">
+        <p class="CardTitle">Los Angeles</p>
+        <p class="text-md text-white">4 rooms, 3 bathrooms, kitchen and private pool.</p>
+      </div>
+
+      <div class="w-full h-96 bg-miami bg-cover rounded-lg py-10 px-6">
+        <p class="CardTitle">Miami</p>
+        <p class="text-md text-white">3 rooms, 2 bathrooms, kitchen and amazing 
+          sea view.</p>
+      </div>
+
+      <div class="w-full h-96 bg-bali bg-cover rounded-lg py-10 px-6">
+        <p class="CardTitle">Bali</p>
+        <p class="text-md text-white">2 rooms, 2 bathrooms, kitchen and private
+          pool.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="w-full h-full" id="faqs">
+    <div class="w-full h-full px-6 flex flex-col space-y-4">
+      <p class="text-3xl text-primary font-semibold mt-6">FAQS</p>
+    
+
+    <div>
+      <p class="text-xl font-medium text-primary">Payment Methods</p>
+      <p class="text-md pt-2">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+    </div>
+
+    <div>
+      <p class="text-xl font-medium text-primary">Cancellation Policy</p>
+      <p class="text-md pt-2">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+    </div>
+
+    <div>
+      <p class="text-xl font-medium text-primary">Long Stays</p>
+      <p class="text-md pt-2">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+    </div>
+
+  </div>
+  </div>
 </section>
   </body>
 </html>
