@@ -2,7 +2,7 @@
 module.exports = {
   content: ["./src/**/*.{html,js}", "./public/*.{html,js}"],
   //purge: [],
-  darkmode: false,
+  darkmode: "class",
 //   content: [
 //   './public/index.html',    
 //   './src/**/.html',
